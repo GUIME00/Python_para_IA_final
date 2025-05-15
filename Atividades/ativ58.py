@@ -4,6 +4,11 @@ largura = 30
 espacos = largura - 2 - len(string)
 esquerda = espacos // 2
 direita = espacos - esquerda
-print("*" * largura)
-print("*" + " " * esquerda + string + " " * direita + "*")
-print("*" * largura)
+if len(string) % 2 == 0:
+    print("*" * largura)
+    print("*" + " " * esquerda + string + " " * direita + "*")
+    print("*" * largura)
+else:
+    print("*" * largura)
+    print("*"+ string +"*")
+    print("*" * largura)
