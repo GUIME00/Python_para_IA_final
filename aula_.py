@@ -15,8 +15,21 @@
 # ultimo = len(entrada) - 1
 # print(f"O último caracter é {entrada[ultimo]}.")
 
-string_entrada = input("Por favor, digite uma String: ")
-print(string_entrada[0])
-print(string_entrada[1])
-print(string_entrada[3])
-print("Último caracter: " + )
+# #Atividade prática
+
+# palavra = input("Digite a primeira palavra: ")
+# palavra_ = input("Digite a segunda palavra: ")
+# if len(palavra) > len(palavra_):
+#     print(palavra)
+# elif len(palavra) < len(palavra_):
+#     print(palavra_)
+# else:
+#     print("As palavras tem o mesmo tamanho.")
+
+# #Prática
+# string_entrada = input("Por favor, digite uma String: ")
+# penultimo = len(string_entrada) - 2
+# if string_entrada[1] == string_entrada[penultimo]:
+#     print(f"Caracteres iguais {string_entrada[1]} e {string_entrada[penultimo]}.")
+# else:
+#     print(f"Caracteres diferentes {string_entrada[1]} e {string_entrada[penultimo]}.")
