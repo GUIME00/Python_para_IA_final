@@ -1,6 +1,6 @@
 # #Atividade 9 de Função
 # def o_maior_numero(a, b, c):
-#     return max(a, b, c) #max printa o maior número e o min printa o menor
+#     return max(a, b, c) #max retorna o maior número e o min retorna o menor
 # print(o_maior_numero(33, 66, 99)) 
 
 # def o_maior_numero2(a, b, c):
