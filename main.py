@@ -60,7 +60,8 @@ print(a)
 # A diferença entre uma lista e um gerador é que uma lista armazena todos os valores na memória,
 # enquanto um gerador produz um valor de cada vez e não armazena todos os valores na memória de uma só vez.
 # Isso pode ser útil para grandes conjuntos de dados em que o uso da memória é uma preocupação.
-# Por fim, os comandos print imprimem os valores de a e b. A saída mostra a lista de números pares para a e o local da memória do objeto gerador para b.
+# Por fim, os comandos print imprimem os valores de a e b. 
+# A saída mostra a lista de números pares para a e o local da memória do objeto gerador para b.
 
 a = [x * 2 for x in range(10)]
 b = (x * 2 for x in range(10))

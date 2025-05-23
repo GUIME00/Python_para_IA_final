@@ -126,7 +126,23 @@
 
 # #Prática
 
-lista = []
-while True:
-    print("Lista atual",lista)
-    escolha = input("Digite + para adicionar, - para remover ou 0 para sair: ")
+# lista = []
+# while True:
+#     print("Lista atual",lista)
+#     print("Digite 'a' para adicionar 'r' para remover ou 's' para sair.")
+#     escolha = input("Sua escolha: ")
+#     if escolha == 'a':
+#         if len(lista) == 0:
+#             novoItem = 1
+#         else:
+#             novoItem = lista[-1] + 1
+#         lista.append(novoItem)
+#         print("Adicionado", novoItem)
+#     elif escolha == 'r':
+#         itemRemovido = lista.pop()
+#         print("Removido", itemRemovido)
+#     elif escolha == 's':
+#         print("Saindo do programa.")
+#         break
+#     else:
+#         print("Opção inválida. Tente novamente.")
