@@ -25,3 +25,4 @@
 #     while i < len(compras_ordenada):
 #         print(compras_ordenada[i])
 #         i += 1
+# lista_compras()
