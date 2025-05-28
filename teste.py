@@ -42,3 +42,29 @@
 #     soma = x + resultado()
 #     print(soma)
 # calculo (77)
+
+# Teste 5 # Somando listas
+# def lista_soma(str1,str2,str3):
+#     resultado = []
+#     for i in range (len(str1)):
+#         soma = str1[i] + str2[i] + str3[i]
+#         resultado.append(soma)
+#     return resultado
+    
+# lista1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 100, 22]
+# lista2 = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+# lista3 = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+# print(lista_soma(lista1,lista2,lista3))
+
+# Teste de nada
+# def mais_caracteres(txt):
+#     frase = "O rato roeu a roupa do rei de Roma."
+#     print(frase.count(all))
+#     return max(frase)
+# print(mais_caracteres())
+
+# resposta = input("Deseja continuar? (s/n): ")
+# if resposta.lower() == 's':
+#     print("Continuando...")
+# else:
+#     print("Parando.")

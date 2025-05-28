@@ -75,3 +75,78 @@
 # print(num)
 # for i in num:
 #     print(i)
+
+# .count(): conta quantas vezes uma string ou inteiro há dentro de um conjunto de dados. 
+
+# minha_string = "Quantas madeiras um esquilo poderia empilhar se um esquilo pudesse empilhar madeiras?"
+# print(minha_string.count("a"))
+
+# minha_lista = [1,2,3,4,4,4,6,6,8,9,9]
+# print(minha_lista.count(9))
+
+# Replace
+
+# minhaString = "Olá, Oi, Oi, Amigos"
+# novaString = minhaString.replace("Amigos", "Friends")
+# print(novaString)
+
+# minhaString = "Oi, Oi, Oi, Amigos"
+# novaString = minhaString.replace("Oi", "Olá")
+# print(novaString)
+
+# Prática
+# frase = "O rato roeu a roupa do rei de roma."
+# def mais_caracteres(txt):
+    
+#     maior_caractere = ""
+#     maior_contagem = 0
+
+#     for caractere in txt:
+#         contagem = txt.count(caractere)
+#         if contagem > maior_contagem:
+#             maior_contagem = contagem
+#             maior_caractere = caractere
+#     return maior_caractere
+# print(mais_caracteres(frase.replace(" ","")))
+
+
+# Lower
+# A estrutura .lower() é um método de string que serve para converter todos os caracteres de uma string para letras minúsculas.
+# texto = "Python É Legal"
+# texto_minusculo = texto.lower()
+# print(texto_minusculo)
+
+
+# lista_bidimensional = [
+#     [0,1,2,3],
+#     [5,6,8,9],
+#     [1,8,2,3],
+#     [4,5,6,7]
+#     ]                   # x, y # x = linha e y = coluna
+# print(lista_bidimensional[2][2])
+# print(lista_bidimensional[2][0])
+# print(lista_bidimensional[0][2])
+# print(lista_bidimensional[0][3])
+# print(lista_bidimensional[3][3])
+# print(lista_bidimensional[0]) # Imprime a linha inteira
+# print(lista_bidimensional[1]) # Imprime a linha inteira
+# print(lista_bidimensional[2]) # Imprime a linha inteira
+# print(lista_bidimensional[3]) # Imprime a linha inteira
+
+# Prática
+
+# def conta_elementos_match(minha_matriz: list, elemento: int): 
+#     contador = 0
+#     for linha in minha_matriz:
+#         for item in linha:
+#             if item == elemento:
+#                 contador += 1
+#     return contador
+# tabela = [
+#     [0,1,2,3],
+#     [5,6,8,9],
+#     [2,8,4,0],
+#     [4,5,2,7]
+#     ]
+# resultado = conta_elementos_match(tabela,2)
+# print(f"O número 2 aparece {resultado} vezes na tabela.")
