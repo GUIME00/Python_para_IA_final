@@ -68,3 +68,55 @@
 #     print("Continuando...")
 # else:
 #     print("Parando.")
+
+# sudoku = [
+#     [9, 0, 0, 0, 8, 0, 3, 0, 0],
+#     [0, 0, 0, 2, 5, 0, 7, 0, 0],
+#     [0, 2, 0, 3, 0, 0, 0, 0, 4],
+#     [0, 9, 4, 0, 0, 0, 0, 0, 0],
+#     [0, 0, 0, 7, 3, 0, 5, 6, 0],
+#     [7, 0, 5, 0, 6, 0, 4, 0, 0],
+#     [0, 0, 7, 8, 0, 3, 9, 0, 0],
+#     [0, 0, 1, 0, 0, 0, 0, 0, 3],
+#     [3, 0, 0, 0, 0, 0, 0, 0, 2]
+#     ]
+
+# for i in range(9):
+#     for j in range(9):
+#         if sudoku[i][j] == 0:
+#             print("_", end=" ")
+#         else:
+#             print(sudoku[i][j], end=" ")
+#         if (j + 1) % 3 == 0 and j < 8:
+#             print("|", end=" ")
+#     print()
+#     if (i + 1) % 3 == 0 and i < 8:
+#         print("-" * 21)
+
+# Teste Jogo da Velha
+
+# def jogueOjogo(mesa: list, x: int, y: int, caracter: str):
+#     if 0 <= x < 3 and 0 <= y < 3:
+#         if mesa[x][y] == " ":
+#             mesa[x][y] = caracter
+#         else:
+#             print("A posição já está ocupada.")
+#     else:
+#         print("Coordenadas inválidas.")
+# jogo_da_velha = [
+#                 [" "," "," "],
+#                 [" "," "," "],
+#                 [" "," "," "]
+#                 ]
+# jogueOjogo(jogo_da_velha, 0, 0, "O")
+# jogueOjogo(jogo_da_velha, 1, 1, "X")
+# jogueOjogo(jogo_da_velha, 2, 2, "X")
+# jogueOjogo(jogo_da_velha, 0, 1, " ")
+# jogueOjogo(jogo_da_velha, 1, 0, " ")
+# jogueOjogo(jogo_da_velha, 1, 2, "O")
+# jogueOjogo(jogo_da_velha, 2, 1, "O")
+# jogueOjogo(jogo_da_velha, 0, 2, "X")
+# jogueOjogo(jogo_da_velha, 2, 0, "X")
+
+# for linha in jogo_da_velha:
+#     print("|".join(linha))

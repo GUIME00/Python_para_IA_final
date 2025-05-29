@@ -133,7 +133,7 @@
 # print(lista_bidimensional[2]) # Imprime a linha inteira
 # print(lista_bidimensional[3]) # Imprime a linha inteira
 
-# Prática
+# Prática "Tabela"
 
 # def conta_elementos_match(minha_matriz: list, elemento: int): 
 #     contador = 0
@@ -150,3 +150,35 @@
 #     ]
 # resultado = conta_elementos_match(tabela,2)
 # print(f"O número 2 aparece {resultado} vezes na tabela.")
+
+#  #Prática de Sudoku
+
+# sudoku = [
+#     [9, 0, 0, 0, 8, 0, 3, 0, 0],
+#     [0, 0, 0, 2, 5, 0, 7, 0, 0],
+#     [0, 2, 0, 3, 0, 0, 0, 0, 4],
+#     [0, 9, 4, 0, 0, 0, 0, 0, 0],
+#     [0, 0, 0, 7, 3, 0, 5, 6, 0],
+#     [7, 0, 5, 0, 6, 0, 4, 0, 0],
+#     [0, 0, 7, 8, 0, 3, 9, 0, 0],
+#     [0, 0, 1, 0, 0, 0, 0, 0, 3],
+#     [3, 0, 0, 0, 0, 0, 0, 0, 2]
+#     ]
+
+# for i in range(9):
+#     for j in range(9):
+#         if sudoku[i][j] == 0:
+#             print("_", end=" ")
+#         else:
+#             print(sudoku[i][j], end=" ")
+#         if (j + 1) % 3 == 0 and j < 8:
+#             print("", end="")
+#     print()
+
+# for linha in sudoku:
+#     for item in linha:
+#         if item == 0:
+#             print("_ ",end="")
+#         else:
+#             print(item,"",end="")
+#     print()
