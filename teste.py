@@ -120,3 +120,24 @@
 
 # for linha in jogo_da_velha:
 #     print("|".join(linha))
+
+# lista = {"Julia": "99999-9999", "Bruna": "98999-9999", "Amanda": "98799-9999", "Guilherme": "98769-9999", "Holandda": "98765-9999", "Pedro": "98765-4999"}
+# while True:
+#     comando = input("\nComandos: \n1 - busca \n2 - adiciona \n3 - sair \nDigite aqui: ")
+#     if comando == '2':
+#         nome = input("Digite o nome que deseja adicionar na lista telefônica: ")
+#         telefone = input("Digite o telefone deste contato: ")
+#         lista[nome] = telefone
+#         print(f"{nome} adicionado a sua lista telefônica.")
+#     elif comando == '1':
+#         busca = input("Digite o nome de quem está procurando: ")
+#         if busca in lista:
+#             print(f"{busca} encontrado(a).")
+#             print(lista[busca])
+#         else:
+#             print("Nome não foi encontrado. Digite 1 para adicionar um contato novo. :-)")
+#     elif comando == '3':
+#         print("Saindo...")
+#         break
+#     else:
+#         print("Comando não identificado.")

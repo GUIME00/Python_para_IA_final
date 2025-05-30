@@ -68,3 +68,17 @@ b = (x * 2 for x in range(10))
 
 print(a)
 print(b)
+
+# Testando o comando .join()
+
+palavras = ['eu', 'estou', 'aprendendo','Python']
+frase = ' '.join(palavras)
+print(frase)
+
+frutas = ['maçã', 'banana', 'laranja']
+resultado = ', '.join(frutas)
+print(resultado)
+
+letras = ['P', 'y', 't', 'h', 'o', 'n']
+palavra = ''.join(letras)
+print(palavra)
