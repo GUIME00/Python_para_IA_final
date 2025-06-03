@@ -171,18 +171,29 @@
 
 
 
-arquivo = None
-try:
-    arquivo = open("dados.txt", "r")
-    conteudo = arquivo.read()
 
-except FileNotFoundError:
-    print("Erro: Arquivo não encontrado.")
-except Exception as e:
-    print(f"Erro ao ler o arquivo: {e}")
-else:
-    print("Processamento do arquivo concluído com sucesso.")
-finally:
-    if arquivo:
-        arquivo.close()
-        print("Arquivo fechado.")
+# import json
+
+# # Simula uma resposta de API no formato JSON
+# resposta_api = '''
+# {
+#     "usuario": {
+#         "nome": "Joana",
+#         "idade": 29
+#     }
+# }
+# '''
+
+# # Converte a string JSON em dicionário Python
+# dados = json.loads(resposta_api)
+
+# # Função para extrair o e-mail do usuário, tratando o erro se não existir
+# def obter_email_usuario(dados):
+#     try:
+#         email = dados["usuario"]["email"]
+#         print(f"E-mail encontrado: {email}")
+#     except KeyError as e:
+#         print(f"Erro: A chave {e} não foi encontrada na resposta da API.")
+
+# # Chamada da função
+# obter_email_usuario(dados)
