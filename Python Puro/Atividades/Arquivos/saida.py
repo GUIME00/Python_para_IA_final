@@ -5,6 +5,7 @@
 #             nota = input("Anotação: ")
 #             if nota == '0':
 #                 print("Saindo...")
+#                 break
 #             else:
 #                 f = arquivo
 #                 f.write(f"\n{nota}")
