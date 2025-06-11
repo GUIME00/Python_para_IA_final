@@ -9,7 +9,7 @@
 
 # .DataFrame()
 # dados_alunos = {
-#     'Nome':['Julia','Guilherme','Valdir','Gabriel'],
+#     'Nome':['Julia Holanda','Guilherme Brasil','Valdir Odorico','Gabriel Rasoto'],
 #     'Idade':[20,18,18,17],
 #     'Curso':['Biomedicina','Ciência da Computação', 'Engenharia Civil', 'Adiministração']
 #               }

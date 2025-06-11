@@ -29,3 +29,9 @@
 # # Exibe o DataFrame atualizado com a nova coluna
 # print("\nDataFrame com idade em meses:")
 # print(df)
+
+import pandas as pd
+
+url_filmes = "IMDB-Movie-Data.csv"
+df_filmes = pd.read_csv(url_filmes)
+print(df_filmes.info())
