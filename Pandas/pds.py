@@ -30,8 +30,18 @@
 # print("\nDataFrame com idade em meses:")
 # print(df)
 
-import pandas as pd
+# import pandas as pd
 
-url_filmes = "IMDB-Movie-Data.csv"
-df_filmes = pd.read_csv(url_filmes)
-print(df_filmes.info())
+# url_filmes = "IMDB-Movie-Data.csv"
+# df_filmes = pd.read_csv(url_filmes)
+# contagem_diretores = df_filmes['Director'].value_counts()
+# print(f"\nOs 5 diretores mais frequentes sucessivamente: {contagem_diretores.head()}")
+
+# duracao_filmes = df_filmes['Runtime'].value_counts()
+# print(f"\nOs 10 filmes mais longos sucessivamente: {duracao_filmes.head(10)}")
+
+# certificado_filmes = df_filmes['Certificate'].sort_values()
+# print(f"\nOrdem alfabética da lista de filmes: {certificado_filmes.head()}")
+
+# score_filmes = df_filmes['Meta_score'].sort_values()
+# print(f"\nOrdem lista de filmes: {score_filmes.head()}")

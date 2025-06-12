@@ -1,7 +1,7 @@
-import pandas as pd
+# import pandas as pd
 
-url_filmes = "IMDB-Movie-Data.csv" # "Construir" o caminho para o arquivo
-df_filmes = pd.read_csv(url_filmes)
+# url_filmes = "IMDB-Movie-Data.csv" # "Construir" o caminho para o arquivo
+# df_filmes = pd.read_csv(url_filmes)
 # print("Dados carregados com succeso!")
 
 # # .head() # "Topo"
@@ -120,3 +120,31 @@ df_filmes = pd.read_csv(url_filmes)
 # df_sem_nan_colunas = df_filmes.dropna(axis=1)
 # print(f"Colunas originais: {df_filmes.columns.tolist()}")
 # print(f"Colunas após dropna: {df_sem_nan_colunas.columns.tolist()}")
+
+# # Contando as frequências de coluna
+# contagem_diretores = df_filmes['Director'].value_counts()
+# print(f"\nOs 10 diretores mais frequentes sucessivamente: {contagem_diretores.head(10)}")
+
+# # Ordenando filmes pela nota ('IMDB_Rating)
+# df_ordenando_nota = df_filmes.sort_values(by=['IMDB_Rating'],ascending=False)
+# print(f"\nTop 5 filmes por nota: {df_ordenando_nota.head()}")
+
+# # Ordenando filmes por mais de uma coluna
+# df_ordenando_por_duas_col = df_filmes.sort_values(by=['Released_Year','Gross'], ascending=[False,True])
+# print(f"Top 5 filmes por ano e gross: {df_ordenando_por_duas_col.head()}")
+
+# # Converter caso necessário
+# df_filmes['Gross'] = pd.to_numeric(df_filmes['Gross'], errors='coerce')
+# df_filmes['IMDB_Rating'] = pd.to_numeric(df_filmes['IMDB_Rating'], errors='coerce')
+
+# # Calculando a média do IMDB e Gross para cada Released_Year
+# metricas_por_ano = df_filmes.groupby('Released_Year').agg(
+#     Media_Rating = ('IMDB_Rating','mean'),
+#     Media_Receita = ('Gross','mean'),
+#     Total_Filmes = ('Series_Title','count')
+#     )
+# print(metricas_por_ano)
+
+# # Salvando em um arquivo CSV sem o índice
+# df_filmes.to_csv('meus_filmes_bem_avaliados.csv', index=False)
+# print(f"\nDataFrame salvo em 'meus_filmes_bem_avaliados.csv'.")
